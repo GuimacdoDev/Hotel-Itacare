@@ -1,0 +1,39 @@
+.container{
+    background: #ccc;
+    height: 500px;
+    display: flex;
+
+    flex-direction: row;
+    /* column | row-reverse | column-reverse */
+
+    flex-wrap: nowrap;
+    /* wrap | wrap-reverse */
+
+    justify-content: center;
+    /* flex-end | center | space-between | space-around */
+    
+    align-items: start;
+    /* flex-start | flex-end | center | baseline */
+
+    
+    align-content: center;
+    /* Apenas funciona com o wrap ativo */
+}
+
+.item{
+    background-color: black;
+    color: white;
+    padding: 20px;
+    width: 500px;
+
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 300px;
+
+    flex: 1 1 300px;
+}
+
+.article-01 { flex-shrink: 3;}
+.article-02 { align-self: center;}
+.article-03 {}
+.article-04 {}
